@@ -1,4 +1,4 @@
-# Hello-World - Simple project to learn Gitlab CI/CD.
+# Hello-World - Common Lisp Hello World project.
 
 ## Usage
 

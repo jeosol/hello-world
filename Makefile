@@ -10,6 +10,6 @@ build:
 
 test:
 	$(LISP) \
-		--eval '(ql:quickload :hello-world/tests)' \
+		--eval '(ql:quickload :hello-world)' \
 		--eval '(asdf:test-system :hello-world)' \
 		--eval '(quit)'

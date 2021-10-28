@@ -6,7 +6,7 @@ say_hello:
         - build
 
     before_script:
-        - git clone https://gitlab.com/jeosol/hello-world.git ~/quicklisp/local-projects/
+        - git clone https://github.com/jeosol/hello-world.git ~/quicklisp/local-projects/
 
     test:
         stage: test

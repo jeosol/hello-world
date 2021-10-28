@@ -9,7 +9,7 @@
   ;;               :components
   ;;               ((:file "main"))))
   :build-operation "program-op"
-  :build-pathname  "hello-world"
+  :build-pathname  "./bin/hello-world"
   :entry-point     "hello-world/src/hello-world:greet-user"
   :description "Simple project to learn Gitlab CI/CD."
   :in-order-to ((test-op (test-op "hello-world/tests"))))

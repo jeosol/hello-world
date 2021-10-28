@@ -1,8 +1,10 @@
-(defpackage hello-world/tests/hello-world-tests
+(uiop:define-package :hello-world/tests/hello-world-tests
   (:use :cl
         :fiveam)
+  (:export #:test-hello-world)
   (:import-from :hello-world
                 #:greet-user))
+
 (in-package :hello-world/tests/hello-world-tests)
 
 ;; NOTE: To run this test file, execute `(asdf:test-system :hello-world)' in your Lisp.
@@ -15,5 +17,5 @@
   :in test-hello-world)
 
 (test hello-world-runs
-      (is (string-equal "Jerome" (greet-user "Jerome"))))
+      (is (string-equal "Hello World Jerome!" (greet-user "Jerome"))))
 

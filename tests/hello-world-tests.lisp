@@ -17,5 +17,5 @@
   :in test-hello-world)
 
 (test hello-world-runs
-      (is (string-equal "Hello World Jerome!" (greet-user "Jerome"))))
+      (is (string-equal "Hello John!" (greet-user))))
 

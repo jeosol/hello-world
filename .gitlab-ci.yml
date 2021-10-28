@@ -1,4 +1,27 @@
 say_hello:
-    image: alpine:latest
+    image: tdba/simapi:sbcl_2.1.9
+
+    stages:
+        - test
+        - build
+
+    before_script:
+        - git clone https://gitlab.com/jeosol/hello-world.git ~/quicklisp/local-projects/
+
+    test:
+        stage: test
+        script:
+          - make test
+
+    build:
+        stage: build
+        only:
+          - tags
+        script:
+          - make build
+        artifacts:
+          paths:
+            - 
+          
     script:
         - echo 'Hello World'

@@ -1,8 +1,9 @@
-(defpackage hello-world/tests/main
+(defpackage hello-world/tests/hello-world-tests
   (:use :cl
-        :hello-world
-        :fiveam))
-(in-package :hello-world/tests/main)
+        :fiveam)
+  (:import-from :hello-world
+                #:greet-user))
+(in-package :hello-world/tests/hello-world-tests)
 
 ;; NOTE: To run this test file, execute `(asdf:test-system :hello-world)' in your Lisp.
 
@@ -14,5 +15,5 @@
   :in test-hello-world)
 
 (test hello-world-runs
-      (is (string-equal "Jerome" (hello-world:greet-user "Jerome"))))
+      (is (string-equal "Jerome" (greet-user "Jerome"))))
 

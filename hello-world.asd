@@ -4,6 +4,7 @@
   :license "Thedibia LLC"
   :class :package-inferred-system
   :depends-on ("hello-world/src/hello-world")
+  :components ((:file "package"))
   ;; :components ((:module "src"
   ;;               :components
   ;;               ((:file "main"))))
@@ -16,13 +17,14 @@
 (defsystem "hello-world/tests"
   :author "Jerome E. Onwunalu, PhD <jeronwunalu@gmail.com>"
   :license "Thedibia LLC"
-  :class :package-inferred-system
+  ;:class :package-inferred-system
   :depends-on ("hello-world"
                "fiveam"
-               "hello-world/test/hello-world-tests")
-  ;; :components ((:module "tests"
-  ;;               :components
-  ;;               ((:file "main"))))
+               ;"hello-world/tests/hello-world-tests"
+               )
+  :components ((:module "tests"
+                :components
+                ((:file "hello-world-tests"))))
   :description "Test system for hello-world"
   :perform (test-op (op c) (symbol-call :fiveam :run1
                                         (find-symbol* :hello-world :hello-world/tests))))

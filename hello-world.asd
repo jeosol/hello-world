@@ -1,5 +1,5 @@
 (defsystem "hello-world"
-  :version "0.1.0"
+  :version "1.0.0"
   :author "Jerome E. Onwunalu, PhD <jeronwunalu@gmail.com>"
   :license "Thedibia LLC"
   :class :package-inferred-system
@@ -16,7 +16,7 @@
   :in-order-to ((test-op (test-op "hello-world/tests"))))
 
 (defsystem "hello-world/tests"
-  :license "v.0.0.1"
+  :license "1.0.0"
   :defsystem-depends-on ("fiveam-asdf")
   :depends-on ("fiveam"
                "hello-world"

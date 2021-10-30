@@ -4,7 +4,6 @@ stages:
 
 image: tdba/simapi:sbcl_2.1.9
 
-
 before_script:
   - git clone https://github.com/jeosol/hello-world.git ~/quicklisp/local-projects/
 

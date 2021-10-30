@@ -8,7 +8,7 @@
   ;;               :components
   ;;               ((:file "main"))))
   :build-operation "program-op"
-  :build-pathname  "./bin/hello-world"
+  :build-pathname  "hello-world"
   :entry-point     "hello-world/src/hello-world:greet-user"
   ;:image-op "hello-world.core"
   :description "Simple project to learn Gitlab CI/CD."

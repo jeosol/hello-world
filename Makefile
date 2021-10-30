@@ -3,13 +3,11 @@ LISP ?=sbcl
 # --load hello-world.asd \
 
 build:
-	$(LISP) \
-		--eval '(asdf:make :hello-world)' \
+	$(LISP) --eval '(asdf:make :hello-world)' \
 		--eval '(quit)'
 
 test:
-	$(LISP) \
-		--eval '(asdf:test-system :hello-world)' \
+	$(LISP) --eval '(asdf:test-system :hello-world)' \
 		--eval '(quit)'
 
 image:

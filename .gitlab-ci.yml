@@ -5,7 +5,7 @@ stages:
 image: tdba/simapi:sbcl_2.1.9
 
 before_script:
-  - git clone https://github.com/jeosol/hello-world.git ~/quicklisp/local-projects/
+  - git clone https://github.com/jeosol/hello-world.git ~/quicklisp/local-projects/hello-world
 
 test:
  stage: test
@@ -20,7 +20,5 @@ build:
    - make build
  artifacts:
  paths:
-   - 
+   - ./bin/hello-world
           
- script:
-   - echo 'Hello World'

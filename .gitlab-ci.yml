@@ -14,11 +14,13 @@ test:
 
 build:
  stage: build
- only:
-   - tags
+ #only:
+ #  - tags
  script:
    - make build
+   - mv ~/quicklisp/local-projects/hello-world/bin ${CI_PROJECT_DIR}
+   
  artifacts:
  paths:
-   - ./bin/hello-world
+   - bin
           

@@ -23,7 +23,8 @@ This section describes unit testing in the project. Testing is performed with th
 A Makefile containing **build** and **test** targets is included in the project folder.
 
 #### Running the **test** target
-The project uses the **fiveam** unit test library for all test. The test can be run using one of the following options
+The project uses the [**fiveam**](https://common-lisp.net/project/fiveam/) regression testing framework. We can run the tests defined in the project using one of the following options:
+
 * Shell command (from within project directory):
 ```
 make test

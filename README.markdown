@@ -63,7 +63,7 @@ Please see the **hello-world.asd** file for the [**ASDF**](https://common-lisp.n
 
 
 #### Run the executable
-In this section, we describe how to run the executable **hello-world**. The executable expects a string which represents a name, e.g., Bond. If no name is provided, then the default name of **John** is used. The output of the exectuable is "Hello <name>!".
+In this section, we describe how to run the executable **hello-world**. The executable expects a string which represents a name, e.g., Bond. If no name is provided, then the default string **John** is used. The executable outputs the string "Hello <name>!".
 
 So if we run the executable as:
 ```

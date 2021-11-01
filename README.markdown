@@ -58,7 +58,7 @@ make -f ~/quicklisp/local-projects/hello-world/Makefile build
 (asdf:make "hello-world")
 ```
 
-Please see the** hello-world.asd** file for the **asdf** keywords facilitates creating executables.
+Please see the **hello-world.asd** file for the [**ASDF**](https://common-lisp.net/project/asdf/) keywords facilitates creating executables.
 
 ## Installation
 

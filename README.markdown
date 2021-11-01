@@ -58,7 +58,27 @@ make -f ~/quicklisp/local-projects/hello-world/Makefile build
 (asdf:make "hello-world")
 ```
 
+After running the above command, the executable **hello-world** can be found in the **bin** folder. 
 Please see the **hello-world.asd** file for the [**ASDF**](https://common-lisp.net/project/asdf/) keywords facilitates creating executables.
+
+
+#### Run the executable
+In this section, we describe how to run the executable **hello-world**. The executable expects a string which represents a name, e.g., Bond. If no name is provided, then the default name of **John** is used. The output of the exectuable is "Hello <name>!".
+
+So if we run the executable as:
+```
+./hello-world
+```
+the output is "Hello John!".
+
+If we pass a name as an argument:
+```
+./hello-world Bond
+
+```
+the output is "Hello Bond!".
+
+
 
 ## Installation
 

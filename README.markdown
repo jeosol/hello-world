@@ -25,17 +25,17 @@ A Makefile containing **build** and **test** targets is included in the project 
 #### Running the **test** target
 The project uses the [**fiveam**](https://common-lisp.net/project/fiveam/) regression testing framework. We can run the tests defined in the project using one of the following options:
 
-* Shell command (from within project directory):
+* **Shell** (from within project directory):
 ```
 make test
 ```
 
-* Using shell (from any directory):
+* **Shell** (from any directory):
 ```
 make -f ~/quicklisp/local-projects/hello-world/Makefile test
 ```
 
-* From a REPL
+* **REPL**
 ```
 (asdf:test-system "hello-world")
 ```
@@ -43,17 +43,17 @@ make -f ~/quicklisp/local-projects/hello-world/Makefile test
 #### Running the **build** target
 The build target uses asdf to create an executable named **hello-world** in the **bin** of the project. We can create the executable artifact using one of the following options:
 
-* Shell command (from within project directory):
+* **Shell** (from within project directory):
 ```
 make build
 ```
 
-* Shell command (from any directory):
+* **Shell** (from any directory):
 ```
 make -f ~/quicklisp/local-projects/hello-world/Makefile build
 ```
 
-* From a REPL:
+* **REPL**:
 ```
 (asdf:make "hello-world")
 ```

@@ -12,7 +12,7 @@ git clone https://github.com/jeosol/hello-world.git ~/quicklisp/local-projects/h
 ```
 
 ### Load
-You can start a CL REPL (e.g., using SBCL) and load the hello-world project by issuing the following command:
+You can start a CL REPL (e.g., using [SBCL](http://sbcl.org)) and load the hello-world project by issuing the following command:
 ```
 (ql:quicklisp "hello-world")
 ```

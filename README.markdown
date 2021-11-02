@@ -71,7 +71,7 @@ So if we run the executable as:
 ```
 the output is "Hello John!".
 
-If we pass a name as an argument:
+If we pass a name, e.g., Bond, as argument:
 ```
 ./hello-world Bond
 

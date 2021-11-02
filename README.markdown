@@ -15,7 +15,7 @@ The above command will clone the repository into the **hello-world** under folde
 ### Load
 You can start a CL REPL (e.g., using SBCL) and load the hello-world project by issuing the following command:
 ```
-(ql:quicklisp :hello-world)
+(ql:quicklisp "hello-world")
 ```
 ### Unit Testing and Creating Executables
 This section describes unit testing in the project. Testing is performed with the **fiveam** library, which is a commn testing library used by many CL projects. 

@@ -84,12 +84,13 @@ the output is "Hello Bond!".
 
 ## Author
 
-* jeosol
+* jeosol (jeronwunalu@gmail.com)
 
 ## Copyright
 
+* Copyright(c) 2021 jeosol (jeronwunalu@gmail.com)
 
 
 ## License
 
-
+* Copyright 2021 jeosol Released under the MIT License [http://opensource.org/licenses/mit-license.php](http://opensource.org/licenses/mit-license.php)

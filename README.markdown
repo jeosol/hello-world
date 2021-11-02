@@ -16,6 +16,9 @@ You can start a CL REPL (e.g., using SBCL) and load the hello-world project by i
 ```
 (ql:quicklisp "hello-world")
 ```
+
+Note: that this will only work with SBCL because we used some SBCL especific syntax to read in command line argument passed to the executable (described later).
+
 ### Unit Testing and Creating Executables
 This section describes unit testing in the project. Testing is performed with the **fiveam** library, which is a commn testing library used by many CL projects. 
 

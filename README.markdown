@@ -6,7 +6,7 @@ The project contains a system **hello-world** and another system **hello-world/t
 ## Usage
 ### Cloning the repository
 
-The reposity can be cloned into your **quicklisp/local-projects** directory (as shown below) or somewhere where quicklisp/asdf can find it. The following command command clones the repository under the ~/quicklisp/local-projects/ directory:
+The reposity can be cloned into your **quicklisp/local-projects** directory (as shown below) or somewhere where quicklisp/asdf can find it. The following command clones the repository under the ~/quicklisp/local-projects/ directory:
 ```
 git clone https://github.com/jeosol/hello-world.git ~/quicklisp/local-projects/hello-world
 ```

@@ -10,7 +10,7 @@ The reposity can be cloned into your **quicklisp/local-projects** directory (as 
 ```
 git clone https://github.com/jeosol/hello-world.git ~/quicklisp/local-projects/hello-world
 ```
-The above command will clone the repository into the **hello-world** under folder under the **local-projects** directory.
+The above command will clone the repository into the **hello-world** under the **local-projects** directory.
 
 ### Load
 You can start a CL REPL (e.g., using SBCL) and load the hello-world project by issuing the following command:

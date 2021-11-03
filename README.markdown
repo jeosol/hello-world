@@ -1,23 +1,24 @@
 # Hello-World - Common Lisp Hello World project.
-This is a simple Common Lisp project for testing and demonstrating different software technologies including unit testing, building Docker containers, devops CI/CD, etc.
+This is a simple Common Lisp (CL) project for testing and demonstrating different software technologies including unit testing, building Docker containers, devops CI/CD, etc.
 
-The project contains a **hello-world** system and another system, **hello-world/tests**, which runs the test for the system. Currently the application doesn't do much and it is intentionally kept that way. The focus is not on the system but how the required building blocks to achieve unit testing, devops, etc, can be achieved.
+The project contains a **hello-world** system and another system, **hello-world/tests**, which runs the tests for the system. Currently the application doesn't do much other that print a simple greeting. This is intentional because the focus is not on the system but on how different software concepts are implemented.
 
 ## Usage
 ### Cloning the repository
 
-The reposity can be cloned into your **quicklisp/local-projects** directory (as shown below) or somewhere where quicklisp/asdf can find it. The following command clones the repository under the ~/quicklisp/local-projects/ directory:
+The repository can be cloned into your **quicklisp/local-projects** directory (as shown below) or another directory where it can be found. The following command clones the repository under the ~/quicklisp/local-projects/ directory:
 ```
 git clone https://github.com/jeosol/hello-world.git ~/quicklisp/local-projects/hello-world
 ```
 
 ### Load
-You can start a CL REPL (e.g., using [SBCL](http://sbcl.org)) and load the hello-world project by issuing the following command:
+You can start a CL REPL using [SBCL](http://sbcl.org) and then load the hello-world project. SBCL can be started by issuing the ```sbcl``` command in a terminal. The hello-world project can then be loaded using quicklisp as follows:
+
 ```
 (ql:quicklisp "hello-world")
 ```
 
-Note: that this will only work with SBCL because we used some SBCL especific syntax to read in command line argument passed to the executable (described later).
+**Note**: that this will only work with SBCL because we used some SBCL especific syntax to read in command line argument passed to the executable (described later).
 
 ### Unit Testing and Creating Executables
 This section describes unit testing in the project. Testing is performed with the **fiveam** library, which is a commn testing library used by many CL projects. 
@@ -71,14 +72,20 @@ So if we run the executable as:
 ```
 ./hello-world
 ```
-the output is "Hello John!".
+the output is
+```
+Hello John!
+```
 
 If we pass a name, e.g., Bond, as argument:
 ```
 ./hello-world Bond
 
 ```
-the output is "Hello Bond!".
+the output is
+```
+Hello Bond!
+```
 
 
 

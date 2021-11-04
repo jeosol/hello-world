@@ -19,8 +19,6 @@
                "hello-world/tests/package")
   :class :package-inferred-fiveam-tester-system
   :test-package :hello-world/tests/package
-  :test-names '(:test-hello-world)
-  :num-checks 2
-  :description "Test system for hello-world"
-  :perform (test-op (op c) (uiop:symbol-call :fiveam :run!
-                                             (find-symbol* :test-hello-world :hello-world/tests/package))))
+  :test-names (:test-hello-world)
+  :num-checks 1
+  :description "Test system for hello-world")

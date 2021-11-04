@@ -16,5 +16,6 @@
   :in test-hello-world)
 
 (fiveam:test hello-world-runs
-      (fiveam:is (string-equal "Hello John!" (greet-user))))
+  (fiveam:is (string-equal "Hello John!" (greet-user)))
+  (fiveam:is (string-equal "Hello Mike!" (greet-user "mike"))))
 

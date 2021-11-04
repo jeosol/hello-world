@@ -19,5 +19,5 @@
   :class :package-inferred-fiveam-tester-system
   :test-package :hello-world/tests/package
   :test-names (:test-hello-world)
-  :num-checks 1
+  :num-checks 2
   :description "Test system for hello-world")

@@ -16,3 +16,10 @@ image:
 		--eval '(quit)'
 # creating images
 # (asdf:operate-op 'asdf:image-op 'hello-world :force :all)
+
+docker:
+	@echo "Building hello-world docker image ..."
+	docker image build -t hello-world -f Dockerfile
+	@echo "Built hello-world image ..."
+
+

@@ -3,7 +3,6 @@
   :author "Jerome E. Onwunalu, PhD <jeronwunalu@gmail.com>"
   :class :package-inferred-system
   :depends-on ("hello-world/src/hello-world")
-  :components ((:file "package"))
   :build-operation "program-op"
   :build-pathname  "bin/hello-world"
   :entry-point     "hello-world/src/hello-world:greet-user"

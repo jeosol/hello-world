@@ -6,7 +6,7 @@
   :build-operation "program-op"
   :build-pathname  "bin/hello-world"
   :entry-point     "hello-world/src/hello-world:greet-user"
-  :description "Simple project to learn Gitlab CI/CD."
+  :description "Simple hello world project"
   :in-order-to ((test-op (test-op "hello-world/tests"))))
 
 (defsystem "hello-world/tests"

@@ -1,9 +1,9 @@
 (uiop:define-package :hello-world/tests/hello-world-tests
   (:use :cl
         :fiveam)
-  (:export #:test-hello-world)
   (:import-from :hello-world
-                #:greet-user))
+                #:greet-user)
+  (:export #:test-hello-world))
 
 (in-package :hello-world/tests/hello-world-tests)
 

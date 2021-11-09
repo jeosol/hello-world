@@ -1,6 +1,7 @@
-(uiop:define-package #:hello-world/src/hello-world
+(uiop:define-package :hello-world/src/hello-world
   (:use :cl)
   (:export #:greet-user))
+
 (in-package :hello-world/src/hello-world)
 
 (defun greet-user (&optional (name "John"))

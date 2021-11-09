@@ -3,7 +3,8 @@ LISP ?=sbcl
 # --load hello-world.asd \
 
 build:
-	$(LISP) --eval '(asdf:make :hello-world)' \
+	$(LISP) --eval '(ql:quickload :hello-world)' \
+		--eval '(asdf:make :hello-world)' \
 		--eval '(quit)'
 
 test:
